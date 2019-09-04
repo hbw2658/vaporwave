@@ -1,0 +1,78 @@
+#heading {
+        color: white;
+        width: 15em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: oblique;
+        font-size: 40pt;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 3px #333333;
+        margin: 0;
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    
+}
+
+
+body {  background: linear-gradient(90deg, #006aff, #eb37c4);
+        background-size: 400% 400%;
+
+        -webkit-animation: AnimationName 7s ease infinite;
+        -moz-animation: AnimationName 7s ease infinite;
+        animation: AnimationName 7s ease infinite;
+
+}
+  
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+.var-highlight{
+	color: #C0AD60;
+}
+.string-highlight{
+	color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+		font-size: 2em;
+		margin: 0;
+		font-family: "Courier New";
+
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
