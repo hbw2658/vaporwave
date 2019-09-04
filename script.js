@@ -1,4 +1,4 @@
-let anArrayOfNonbeing = [
+var anArrayOfNonbeing = [
     "game over doesn't mean\nyou can't try again\n",
     "social media dramas",
     "botanical garden\nof dreams\n",
@@ -7,7 +7,7 @@ let anArrayOfNonbeing = [
     "download the future",
     "the stars know\neverything\n",
     "do you wish to continue?",
-    "the central bank of\nmale attention issues worthless currency\n",
+    "the central bank of\nmale attention issues\nworthless currency",
     "the sun watches \neverything i do\n",
     "the moon knows \nall my secrets\n",
     "how will this end?",
@@ -46,12 +46,23 @@ let anArrayOfNonbeing = [
     "the audience is\na poor spectator\n",
     "declare a national\nemergency until\nwe ban capers",
     "giant death robots\nare a dissapointing\nreality",
-    "it feels like the\nsame party every weekend\n",
-    "she\nheals\neverything"
+    "it feels like the\nsame party every\nweekend",
+    "she\nheals\neverything",
+    "tiergarten\nfilm festival\n",
+    "is that person\na shrub?\n",
+    "classically beautiful,\ncurrently horrifying\n",
+    "eating cake for breakfast\nis a welcome departure\nfrom reality",
+    "a smile that says,\n\"everything is going to\nwork out fine for you\"",
+    "you can't control \nwhat happens, but you\n can control your reaction",
+    "the aegean sea thrives\non blood sacrfice\n",
+    "walking on eggshells,\nwaiting on the other\nshoe to drop"
 ];
 
-let randString = anArrayOfNonbeing[Math.floor(Math.random() * anArrayOfNonbeing.length)];
+var randString = anArrayOfNonbeing[Math.floor(Math.random() * anArrayOfNonbeing.length)];
 document.getElementById('heading').innerHTML = randString;
+
+// above is for the random text that pushes to h1 //
+// below is for the typewriter effect that makes the words appear one letter at a time //
 
 function setupTypewriter(t) {
     var HTML = t.innerHTML;

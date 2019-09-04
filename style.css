@@ -1,3 +1,16 @@
+* {
+	    padding: 0px;
+	    margin-top: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
+	    margin-left: 0;	
+}
+
+#container {
+        height: 100vh;
+        margin: auto;
+}
+
 #heading {
         color: white;
         width: 15em;
@@ -7,27 +20,57 @@
         line-height: 1;
         text-align: center;
         text-transform: uppercase;
-        text-shadow: 3px 3px 3px #333333;
+        text-shadow: 4px 4px 3px #333333;
         margin: 0;
-        position: absolute;
+        position: fixed;
         top: 49%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         opacity: 1;
+        z-index: 2;
     
 }
 
 
 body {  background: linear-gradient(90deg, #006aff, #eb37c4);
         background-size: 400% 400%;
-
+        height: 100%;
         -webkit-animation: AnimationName 7s ease infinite;
         -moz-animation: AnimationName 7s ease infinite;
         animation: AnimationName 7s ease infinite;
 
 }
-  
+
+#fullWidthButton {
+        width: 100%;
+        color: transparent;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        margin: 0% 0% -7% 0%;
+        padding: 0%;
+        position: relative;
+        z-index: 1000;
+}
+
+.var-highlight{
+	    color: #C0AD60;
+}
+.string-highlight{
+	    color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+		font-size: 2em;
+		margin: 0;
+		font-family: "Courier New";
+
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
 
 @-webkit-keyframes AnimationName {
     0%{background-position:96% 0%}
@@ -43,23 +86,6 @@ body {  background: linear-gradient(90deg, #006aff, #eb37c4);
     0%{background-position:96% 0%}
     50%{background-position:5% 100%}
     100%{background-position:96% 0%}
-}
-.var-highlight{
-	color: #C0AD60;
-}
-.string-highlight{
-	color: rgba(253, 149, 90, 0.8);
-}
-
-#typewriter{
-		font-size: 2em;
-		margin: 0;
-		font-family: "Courier New";
-
-		&:after{
-			content: "|";
-			animation: blink 500ms linear infinite alternate;
-		}
 }
 
 @-webkit-keyframes blink{
